@@ -1,0 +1,7 @@
+<h1>Teams template</h1>
+<ul>
+{{#each team in model}}
+  <li>{{team.id}} - {{team.name}}</li>
+{{/each}}
+</ul>
+{{outlet}}

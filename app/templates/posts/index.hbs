@@ -1,0 +1,11 @@
+<h1>Posts page</h1>
+{{#link-to 'posts.index'}}Post Index{{/link-to}}
+
+<h2>Posts list</h2>
+{{#each post in model}}
+  Content: {{post.content}}
+{{/each}}
+
+<h1>This is posts index</h1>
+{{#link-to 'posts.new'}}New post{{/link-to}}
+{{outlet}}
